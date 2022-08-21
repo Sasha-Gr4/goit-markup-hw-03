@@ -159,8 +159,11 @@ align-items: center;
 
 .hero-title {
   font-weight: 900;
+  width: 693px;
   font-size: 44px;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
@@ -185,15 +188,16 @@ align-items: center;
 }
 
 .works-card {
-  flex-basis: calc((100%-90px) / 4) ;
+  flex-basis: calc((100% - 90px) / 4) ;
 }
 
 .feature-list {
+  gap: 30px;
   display: flex;
   }
 
   .item-feature {
-    flex-basis: calc((100%-60px) / 3) ;
+    flex-basis: calc((100% - 60px) / 3) ;
   }
 
   .works-list {
@@ -202,6 +206,7 @@ align-items: center;
   }
 
 .feature-list .title {
+  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -212,6 +217,7 @@ align-items: center;
   font-size: 16px;
   line-height: 1.19;
   margin-bottom: 10px;
+  text-align: center;
   }
 
   .team-section {
@@ -228,11 +234,8 @@ align-items: center;
   }
 
   .team-photo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    flex-basis: calc((100%-90px) / 4);
+    flex-basis: calc((100% - 90px) / 4);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background-color: var(--secondary-color) ;
@@ -241,10 +244,11 @@ align-items: center;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 
 .portfolio-card {
-  flex-basis: calc((100%-60px) / 9);
+  flex-basis: calc((100% - 60px) / 9);
 }
 
 .portfolio-list {
@@ -286,6 +290,7 @@ align-items: center;
 
 .button-secondary-list{
   display: flex;
+  margin-bottom: 50px;
   gap: 8px;
   justify-content: center;
   
@@ -294,12 +299,9 @@ align-items: center;
 .button-secondary {
   font-weight: 500;
   line-height: 1.63;
-  margin-bottom: 50px;
   padding: 6px 25px;
   background-color: #f5f4fa;
   color: var(--title-text-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  
 }
 
 .button-secondary.current {
@@ -323,10 +325,7 @@ align-items: center;
   line-height: 1.19;
   color: var(--primary-text-color);
   padding-bottom: 30px;
-}
-
-.team-photo {
-  margin-bottom: 30px;
+  text-align: center;
 }
 
 .portfolio-list .text {
@@ -350,10 +349,13 @@ align-items: center;
  
 }
 
+.footer-addrres-item {
+ margin-bottom: 9px;
+ }
+
 .footer-addrres {
-  color: #ffffff;
-  margin-bottom: 9px;
-}
+  color: var(--secondary-color);
+ }
 
 .footer-phone:hover,
 .footer-phone:focus {
@@ -370,6 +372,6 @@ align-items: center;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-mail {
+.footer-mail-item {
   margin-bottom: 9px;
 }
